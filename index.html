@@ -4,6 +4,9 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,800" rel="stylesheet">
 <link rel="stylesheet" href="index.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 <div class="hero-image constainer2" style="height: 100%;">
   <div class="hero-text">
     <h1 style="font-style: Georgia; color: #fff; font-size:50px;">MATCH<span style="color: coral">MADE</span></h1>
@@ -28,6 +31,7 @@
   </div>
 </div> -->
 <div class="container-fluid backgroundMain p-3">
+  
   <div class="row ">
     <div class="col-lg-6 ">
       <div class="card mx-auto w-75 m-3">
@@ -39,7 +43,7 @@
             <div class="row">
               <div class="col-12  m-1 ">
                 <label for="Film-select"> Select Your Favouriate Film</label>
-                <select class="form-select" id="Film-select" aria-label="Default select example" >
+                <select class="form-select" id="Film-selectp1" aria-label="Default select example" >
                      <option selected>Open this select menu</option>
                      <option value="1">One</option>
                      <option value="2">Two</option>
@@ -50,7 +54,7 @@
             <div class="row">
               <div class="col-12 m-1">
                 <label for="Color-select"> Select Your Color </label>
-                <select class="form-select" id="Color-select" aria-label="Default select example" >
+                <select class="form-select" id="Color-selectp1" aria-label="Default select example" >
                      <option selected>Open this select menu</option>
                      <option value="1">One</option>
                      <option value="2">Two</option>
@@ -75,7 +79,7 @@
             <div class="row">
               <div class="col-12 m-1">
                 <label for="Film-select"> Select Your Favouriate Film</label>
-                <select class="form-select" id="Film-select" aria-label="Default select example" >
+                <select class="form-select" id="Film-selectp2" aria-label="Default select example" >
                      <option selected>Open this select menu</option>
                      <option value="1">One</option>
                      <option value="2">Two</option>
@@ -86,7 +90,7 @@
             <div class="row">
               <div class="col-12 m-1">
                 <label for="Color-select"> Select Your Color</label>
-                <select class="form-select" id="Color-select" aria-label="Default select example" >
+                <select class="form-select" id="Color-selectp2" aria-label="Default select example" >
                      <option selected>Open this select menu</option>
                      <option value="1">One</option>
                      <option value="2">Two</option>
@@ -101,7 +105,7 @@
     </div>
     <div class="col-12 mt-4 text-center">
      
-      <button type="button" class="btn btn-light"> Compare the results</button>
+      <button type="button" class="btn btn-light" onclick="submi(event)"> Compare the results</button>
      </div>
   </div>
     </div>
@@ -115,6 +119,7 @@
 
       Pellentesque leo risus, posuere vitae suscipit quis, laoreet vitae nisi. Duis facilisis gravida magna vitae elementum. In in massa sapien. Integer vestibulum sit amet augue non elementum. Sed semper nisi quis massa fermentum rutrum. Cras eu leo elit. Phasellus volutpat interdum arcu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis elementum quis lectus gravida auctor. Nullam maximus feugiat suscipit. Aliquam lacinia elit in magna commodo congue.</cite> </p></div>
    </div>
+   
    <footer class="bg-light text-center text-lg-start">
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
@@ -122,12 +127,14 @@
       
     </div>
     <!-- Copyright -->
+   
   </footer>
-</div>
 
+</div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 <script src="index.js"></script>
 
 
